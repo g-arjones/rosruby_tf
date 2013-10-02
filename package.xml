@@ -1,0 +1,23 @@
+<package>
+  <name>rosruby_tf</name>
+  <version>0.1.0</version>
+  <description>rosruby_tf</description>
+  <maintainer email="t.ogura@gmail.com">Takashi Ogura</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/rosruby_tf</url>
+  <url type="bugtracker">http://github.com/OTL/rosruby_tf</url>
+
+  <author>Takashi Ogura</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rosruby</build_depend>
+  <run_depend>rosruby</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>tf</run_depend>
+
+  <export>
+
+  </export>
+</package>
