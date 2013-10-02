@@ -14,7 +14,8 @@ rosruby_add_libraries(
 
 install(PROGRAMS
   nodes/tf_broadcaster.rb
-  nodes/tf_listener.rb)
+  nodes/tf_listener.rb
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(DIRECTORY lib/
   DESTINATION ${ROSRUBY_LIB_DESTINATION}
