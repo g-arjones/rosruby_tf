@@ -12,6 +12,10 @@ rosruby_add_libraries(
   lib/tf.rb
   lib/tf)
 
+install(PROGRAMS
+  nodes/tf_broadcaster.rb
+  nodes/tf_listener.rb)
+
 install(DIRECTORY lib/
   DESTINATION ${ROSRUBY_LIB_DESTINATION}
   )
