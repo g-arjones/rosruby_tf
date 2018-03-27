@@ -11,7 +11,7 @@ class TestTfBroadcaster < Test::Unit::TestCase
     tf_broadcaster = Tf::TransformBroadcaster.new(node)
 
     @msg = nil
-    node.subscribe('/tf', Tf::TfMessage) do |msg|
+    node.subscribe('/tf', Tf2_msgs::TFMessage) do |msg|
       @msg = msg
     end
     sleep 1

@@ -24,7 +24,7 @@ module Tf
       ts_msg.transform.rotation.z = rotation[2]
       ts_msg.transform.rotation.w = rotation[3]
 
-      tfm = TfMessage.new
+      tfm = Tf2_msgs::TFMessage.new
       tfm.transforms = [ts_msg]
       @publisher.publish(tfm)
     end
